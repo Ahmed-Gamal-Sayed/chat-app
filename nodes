@@ -1,0 +1,29 @@
+
+create user table with prisma
+
+columns
+user id auto inc unique
+fullname string not null
+username unique not null string
+password minlength 8 not null string length 255
+gender male or female
+burithdate date not null
+age int
+image string
+phone string
+city string not null
+country string not null
+role user or admin
+status any fetures
+createAt
+updatedAt
+
+
+create message table
+
+columns
+message id auto inc unique
+senderId int not null unique
+recverId int not null unique
+message text length 512 or image or audio or video
+createdAt date now default
